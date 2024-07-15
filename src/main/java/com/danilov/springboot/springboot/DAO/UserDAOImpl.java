@@ -9,11 +9,10 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-@Component
 public class UserDAOImpl implements UserDAO {
 
     @Autowired
-    EntityManager entityManager;
+    private EntityManager entityManager;
 
     @Override
     public List<User> getUserList() {
